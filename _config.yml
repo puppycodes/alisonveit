@@ -2,11 +2,13 @@
 title: Alison Veit
 email: contact@alisonveit.com
 description: > # this means to ignore newlines until "baseurl:"
-Alison Veit
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://alisonveit.com" # the base hostname & protocol for your site - used for feed.xml
 twitter_username: justfouryou
-github_username:  justfouryou
+github_username:  puppycodes
 
 # Build settings
 markdown: kramdown
