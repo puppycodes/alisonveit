@@ -2,19 +2,19 @@
 <html>
 
   {% include head.html %}
-
   <body>
-
     {% include header.html %}
-
     <div class="page-content">
       <div class="wrapper">
-        {{ content }}
+    {% for post in site.posts %}
+        <article class="post-content">
+          <img src="{{ post.image }}">
+          <div class="text">{{ post.show }}</div>
+        </article>
+      {% endfor %}
       </div>
     </div>
-
     {% include footer.html %}
-
   </body>
 
 </html>
