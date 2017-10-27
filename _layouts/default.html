@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
-  <body>
-    {% include header.html %}
+{% include head.html %}
+  <body id="bg">
+{% include header.html %}
     <div class="page-content">
-      <div class="wrapper">
-    {% for post in site.posts %}
-        <article class="post-content">
-          <img src="{{ post.image }}">
-          <div class="text">{{ post.show }}</div>
-        </article>
-      {% endfor %}
-      </div>
+    {{ content }}
     </div>
-    {% include footer.html %}
+{% include footer.html %}
+{% include scrollmagic.html %}
+
   </body>
 
 </html>
