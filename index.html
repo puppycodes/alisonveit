@@ -6,12 +6,12 @@ layout: default
 {% for post in site.posts %}
       <article class="post-content">
         <img src="{{ post.image }}">
-        <div class="text">{{ post.show }}</div>
+        <div class="text">{{ post.title }}</div>
       </article>
 {% endfor %}
 <span> color:
-{% for color in site.colors %}
-{{ color.color }}
+{% for color in site.posts %}
+<span>{{color.hex}}</span>
 {% endfor %}
 </span>
     </div>
