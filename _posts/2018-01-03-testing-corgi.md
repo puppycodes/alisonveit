@@ -3,6 +3,7 @@ layout: post
 title: Testing Corgi
 image: /img/uploads/the-personality-traits-of-the-corgi-dog-53e123a70f431.jpg
 show: Corgi Test
-color: '#000000'
+color: '#FFB2F6'
 ---
+
 
