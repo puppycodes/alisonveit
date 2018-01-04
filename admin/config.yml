@@ -16,7 +16,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Layout", name: "layout", widget: "hidden", default: "color"}
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
       - {label: "Hex", name: "hex", widget: "string"}
-    meta: # Meta data fields. Just like fields, but without any preview element
+    meta:
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Post" # Used in the UI, ie.: "New Post"
