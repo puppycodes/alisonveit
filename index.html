@@ -9,5 +9,10 @@ layout: default
         <div class="text">{{ post.show }}</div>
       </article>
 {% endfor %}
+<span> color:
+{% for color in site.colors %}
+{{ color.color }}
+{% endfor %}
+</span>
     </div>
 </div>

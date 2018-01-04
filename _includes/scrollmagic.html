@@ -3,23 +3,20 @@
 						var controller = new ScrollMagic.Controller();
 						var tween = new TimelineMax()
 
-{% for post in site.posts %}
+{% for color in site.color %}
 						.to("#bg", 1, {
-							backgroundColor: '{{post.color}}'
+							backgroundColor:'{{color}}'
 							})
-	{% endfor %}
+{% endfor %}
 						  ;
 
 
-							var bodyHeight = $( document).height();
 
 						// build scene and set duration to window height
-						var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: bodyHeight})
+						var scene = new ScrollMagic.Scene({triggerElement: "#trigger", duration: 3500})
 										.setTween(tween)
 										// .addIndicators() // add indicators (requires plugin)
 										.addTo(controller);
-
-
 
 															// get the current duration value
 
